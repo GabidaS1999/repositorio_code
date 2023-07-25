@@ -1,0 +1,235 @@
+/* link google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+   box-sizing: border-box;
+    
+}
+
+h1{
+    margin-left: 250px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* fin link google fonts*/
+
+/* Inicio navegador */
+
+.navegador{
+    top:0;
+    align-items: center ;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%; 
+    justify-content: space-between;
+    
+}
+.navegador .logo{
+    width: 50px;
+    margin: 10px;
+}
+.navegador ul{
+    top: 0;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+.navegador ul li a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+} 
+.navegador .fa-bars{
+    display: none;
+}
+
+/*Fin navegador*/
+
+/*carrusel*/
+.carousel-item {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    
+}
+.carousel{
+    z-index: -1;
+}
+
+.letra h5{
+    color: white;
+    font-size: 30px;
+    font-family: fantasy;
+}
+.letra p{
+    color: white;
+    font-size: 20px;
+    font-family:cursive ;
+}
+
+/*fin carrusel*/
+.pie-de-pagina{
+    border: 2px solid;
+    width: 100%;
+    bottom: 0;
+}
+.pie-de-pagina p{
+    width: 80%;
+    padding: 10px;
+}
+.nav-nosotros {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+   
+}
+
+/*Inicio tarjetas*/
+
+.imagen{
+    flex-wrap: wrap;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.seccion{
+    display: flex;
+    margin: 10px;
+}
+.imagen2{
+    width: auto;
+    height: 50px;
+    object-fit: cover;
+}
+.sep{
+    margin: 10px;
+}
+.tarjeta{
+    border: 2px solid;
+    width: 300px;
+    border-color: black;
+    
+    padding: 10px;
+    text-align: center;
+    color: rgb(61, 117, 6);
+    margin: 20px;
+    padding-bottom: 100px;
+}
+.borde-redondeado{
+    border-radius: 800px 
+}
+.boton{
+    border: 2px solid;
+    background-color: rgb(96, 189, 3);
+}
+.color-boton{
+    color: white;
+    text-decoration: none;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px 60px 20px;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 200px;
+}
+.img p{
+    margin-top: 100px;
+}
+
+.comprar label{
+    display: flex;
+}
+
+/*Fin tarjetas*/
+
+
+.cafe{
+    display: flex;;
+    text-align: center;
+    flex-wrap:wrap ;
+}
+.frio{
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.boton2{
+    color: black;
+    margin: 0px 80px;
+    display: flex;
+    background-color: rgb(96, 189, 3) ;
+    width: 100px;
+}
+/*Inicio menú*/
+ .menu-bebidas h2{
+    width:100%;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+ }
+/*Fin menú*/
+/* inicio media navegador*/
+@media(max-width:768px){
+    .seccion{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .navegador .fa-bars:hover + ul {
+        left: 0px;
+    }
+    .navegador .fa-bars{
+        display: block;
+        margin: 10px;
+        font-size: 30px;
+        color: rgb(96, 189, 3);
+        order: -1;
+       
+       
+    }
+    .navegador ul:hover{
+        left: 0;
+    }
+    .logo{
+        justify-content: end;
+        
+    }
+    .navegador ul{
+        position:fixed;
+        background-color: rgb(96, 189, 3);
+        width: 250px;
+        height: 100vh;
+        padding-top: 50px;
+        left: -300px;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s;
+        justify-content: start;
+    }
+    .navegador h1 {
+      display: none;
+    }
+
+}
+/*Fin media navegador*/
+
+@media(max-width:768px){
+    .tarjeta{
+        height: 100px;
+    }
+    
+}
+
+
