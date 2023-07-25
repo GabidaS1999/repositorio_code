@@ -25,9 +25,8 @@ h1{
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 100%; 
-    justify-content: space-between;
-    
+    border-bottom: 1px solid black;
+    justify-content: space-between   ;
 }
 .navegador .logo{
     width: 50px;
@@ -49,7 +48,12 @@ h1{
 .navegador .fa-bars{
     display: none;
 }
-
+.img-inicio{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    
+}
 /*Fin navegador*/
 
 /*carrusel*/
@@ -103,14 +107,22 @@ footer{
 
 .imagen{
     flex-wrap: wrap;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width:120px;
+    height: 70px;
+    
 }
+/*inicio menu*/
 .seccion{
     display: flex;
-    margin: 10px;
+   flex-wrap: wrap;
 }
+.menu-bebidas h2{
+    width:100%;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+ }
+
+/*fin menu*/
 .imagen2{
     width: auto;
     height: 50px;
@@ -143,22 +155,17 @@ footer{
 }
 .img{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
     margin: 20px 20px 60px 20px;
     border: 2px solid black;
-    width: 200px;
+    width: 20%;
     height: 200px;
     object-fit: cover;
     border-radius: 200px;
-}
-.img p{
-    margin-top: 100px;
+    gap: 10px;
 }
 
-.comprar label{
-    display: flex;
-}
 
 /*Fin tarjetas*/
 
@@ -182,11 +189,7 @@ footer{
     width: 100px;
 }
 /*Inicio menú*/
- .menu-bebidas h2{
-    width:100%;
-    border-top: 1px solid green;
-    border-bottom: 1px solid green;
- }
+
 /*Fin menú*/
 
 
