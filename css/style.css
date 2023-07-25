@@ -70,15 +70,28 @@ h1{
 }
 
 /*fin carrusel*/
-.pie-de-pagina{
+
+/*inicio pie de pagina*/
+footer{
     border: 2px solid;
     width: 100%;
     bottom: 0;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 60px;
 }
-.pie-de-pagina p{
+.info-empresa p{
+    bottom: 0;
     width: 80%;
     padding: 10px;
 }
+.redes{
+    font-size: 50px;
+    bottom: 0;
+}
+/*fin pie de pagina*/
 .nav-nosotros {
     margin: 10px;
     padding: 20px;
@@ -175,6 +188,8 @@ h1{
     border-bottom: 1px solid green;
  }
 /*Fin menú*/
+
+
 /* inicio media navegador*/
 @media(max-width:768px){
     .seccion{
@@ -183,11 +198,7 @@ h1{
         align-items: center;
     }
     .navegador .fa-bars:hover + ul {
-        left: 0px;
-        
-    }
-    .carousel-item {
-        z-index: -1;
+        left: 0px;   
     }
     .navegador .fa-bars{
         display: block;
