@@ -178,7 +178,6 @@ footer{
 @media(max-width:768px){
     .seccion{
         flex-direction: column;
-        flex-wrap: wrap;
         align-items: center;
     }
     .navegador .fa-bars:hover + ul {
